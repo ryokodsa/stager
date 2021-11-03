@@ -4,5 +4,19 @@
 <div class="schedule">
     <h1 class="title">{{ calendar_data.title }}</h1>
     <p>hello</p>
-</div>
-{% endblock %}
+    <!--花組-->
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FTokyo&title=%E5%85%AC%E6%BC%94%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB&src=YXMydWZrcXBucmExc2J1ajgxanVuYjRnbWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D81B60" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <!--月組-->
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FTokyo&title=%E5%85%AC%E6%BC%94%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB&src=YmNrZjJsc3A0YTF0OGFoZDFndm5jN29lczhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23F6BF26" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <!--花と月-->
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FTokyo&title=%E5%85%AC%E6%BC%94%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB&src=YmNrZjJsc3A0YTF0OGFoZDFndm5jN29lczhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=YXMydWZrcXBucmExc2J1ajgxanVuYjRnbWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23F6BF26&color=%23D81B60" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <!--全て-->
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FTokyo&title=%E5%85%AC%E6%BC%94%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB&src=MzFkcmEydGE5a2lraWQ2bzZlY2E1YTZzOWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=YWtyN2YyNnZxZWM3czV2MGI1aDZrY2VnbzRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=YmNrZjJsc3A0YTF0OGFoZDFndm5jN29lczhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=OGU0djJyNThwdjY4YWEwZDc2cGJrOTdhMHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=YXMydWZrcXBucmExc2J1ajgxanVuYjRnbWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=b2FydmUybm1vamVjM2lpdjU2Njc2OGcxODhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23B39DDB&color=%234285F4&color=%23F6BF26&color=%23A79B8E&color=%23D81B60&color=%237CB342" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe></div>
+    <!--花組以外-->
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FTokyo&title=%E5%85%AC%E6%BC%94%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB&src=MzFkcmEydGE5a2lraWQ2bzZlY2E1YTZzOWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=YWtyN2YyNnZxZWM3czV2MGI1aDZrY2VnbzRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=YmNrZjJsc3A0YTF0OGFoZDFndm5jN29lczhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=OGU0djJyNThwdjY4YWEwZDc2cGJrOTdhMHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=b2FydmUybm1vamVjM2lpdjU2Njc2OGcxODhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23B39DDB&color=%234285F4&color=%23F6BF26&color=%23A79B8E&color=%237CB342" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    {% endblock %}
+
+    <!--
+        カレンダーのリンク構成
+        <iframe src="共通の枠部分&src=カレンダー１&src=カレンダー２&カレンダー１の色&カレンダー２の色" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    -->
