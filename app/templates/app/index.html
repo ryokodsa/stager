@@ -26,16 +26,16 @@
                 var str = selected.join("");
                 var calendarlink = "https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FTokyo&title=%E5%85%AC%E6%BC%94%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB" + str
                 var calendars = document.getElementById("displayvalues").innerHTML=calendarlink;
+                displayvalues.style.display ="none";
                 document.getElementById("ifr").contentWindow.location.href=calendars;
             
                 
             };
         };
         
-        function output () {
-            return calendars;
-
-        }
+        
+        //function output () {
+        //    return calendars;}
 
 
 </script>
@@ -43,6 +43,8 @@
     <h1>Stagement</h1>
     <!--JSを書く-->
     
+    <p>舞台のスケジュールを表示するサイトです。</p>
+    <p>劇場名または組名のチェックボックスにチェックを入れ、「カレンダーを表示」ボタンを押すとカレンダーに反映されます。</p>
     
     <hr>
     <div id="tab1">
@@ -58,15 +60,17 @@
         <p id="displayvalues"></p>
 
     <div>
-                <iframe src="" id="ifr" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FTokyo&title=%E5%85%AC%E6%BC%94%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB" id="ifr" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
 
     <script>
-        document.getElementById("ifr").src=output();
+    //    document.getElementById("ifr").src=output();
 
     </script>
 
     {{ calendar_data }}
+
+    <div id="calendar"></div>
 
 {% endblock %}
 

@@ -1,3 +1,13 @@
 * {
     margin: 0;
 }
+
+body {
+    padding-left: 15px;
+    background-color: #C1012D;
+}
+
+h1 {
+    color: #C25110;
+    font-family: 'Lobster';
+}
