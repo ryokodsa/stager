@@ -5,8 +5,6 @@
 
 
 
-
-<!--ここからもう一回書くよ！参考はこの動画https://www.youtube.com/watch?v=VIUY95ewjSU -->
 <script>
         function getvalues()
         {
@@ -33,20 +31,21 @@
             };
         };
         
-        
-        //function output () {
-        //    return calendars;}
 
 
 </script>
     
     <h1>Stagement</h1>
     <!--JSを書く-->
-    
+
+
     <p>舞台のスケジュールを表示するサイトです。</p>
+    <hr>
+
+    <h2>カレンダー</h2>
     <p>劇場名または組名のチェックボックスにチェックを入れ、「カレンダーを表示」ボタンを押すとカレンダーに反映されます。</p>
     
-    <hr>
+
     <div id="tab1">
         <!--選択肢を表示-->
         {% for resultdisplay in troupes %}
@@ -59,25 +58,73 @@
         <input id="but1" type="button" value="カレンダーを表示" onclick="getvalues()"/>
         <p id="displayvalues"></p>
 
+    
     <div>
-                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FTokyo&title=%E5%85%AC%E6%BC%94%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB" id="ifr" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FTokyo&title=%E5%85%AC%E6%BC%94%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB" id="ifr" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <!--
+        カレンダーのリンク構成
+        <iframe src="共通の枠部分
+                &src=カレンダー１&カレンダー１の色&src=カレンダー２&カレンダー２の色" 
+                style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no">
+        </iframe>
+    -->
     </div>
 
-    <script>
-    //    document.getElementById("ifr").src=output();
 
-    </script>
 
     {{ calendar_data }}
 
     <div id="calendar"></div>
 
+
+    <h2>作品リスト</h2>
+    <!--
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    -->
+    <h4>宝塚大劇場・東京宝塚劇場</h4>
+    <ul>
+        <li><a href=https://kageki.hankyu.co.jp/revue/2021/yagyuninpouchou/index.html>星組『柳生忍法帖』『モアー・ダンディズム！』</a></li>
+        <!--
+            <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="">Tweet</a> 
+        -->
+        <li><a href=https://kageki.hankyu.co.jp/revue/2021/baroquerock/index.html>花組『元禄バロックロック』『The Fascination!』</a></li>
+        <li><a href=https://kageki.hankyu.co.jp/revue/2022/romance_gekijo/index.html>月組『今夜、ロマンス劇場で』『FULL SWING!』</a></li>
+        <li><a href=https://kageki.hankyu.co.jp/revue/2022/neversaygoodbye/index.html>宙組『NEVER SAY GOODBYE』－ある愛の軌跡－</a></li>
+        <li><a href=https://kageki.hankyu.co.jp/revue/2022/yumesukesenryoumiyage/index.html>雪組『夢介千両みやげ』『Sensational!』</a></li>
+        <li><a href=https://kageki.hankyu.co.jp/revue/2022/meguriainextgeneration/index.html>星組『めぐり会いは再び next generation－真夜中の依頼人－』『Gran Cantante!!』</a></li>
+    </ul>
+
+    <h4>帝国劇場</h4>
+    <ul>
+        <li>『JOHNNYS' ISLAND』</li>
+        <li>『笑う男』</li>
+        <li>『千と千尋の神隠し』</li>
+    </ul>
+
+    <h4>梅田芸術劇場</h4>
+    <ul>
+        <li>『浜村渚の計算ノート』</li>
+        <li>『フィスト・オブ・ノーススター』〜北斗の拳〜</li>
+        <li>『マイ・フェア・レディ』</li>
+        <li>『ガラスの動物園』</li>
+        <li>『ボディガード』</li>
+    </ul>
+
+    <h4>その他</h4>
+    <ul>
+        <li>雪組『ODYSSEY－The Age of Discovery－』</li>
+        <li>雪組『Sweet Little Rock 'n' Roll』</li>
+        <li>星組『ザ・ジェントル・ライアー ～英国的、紳士と淑女のゲーム～』</li>
+        <li>星組『王家に捧ぐ歌』</li>
+        <li>花組『TOP HAT』</li>
+        <li>花組『冬霞の巴里』</li>
+        <li>『INTO THE WOODS』</li>
+    </ul>
+
+    <script src="workslist.js"></script>
+
 {% endblock %}
 
-<!--
-        カレンダーのリンク構成
-        <iframe src="共通の枠部分
-                &src=カレンダー１&src=カレンダー２
-                &カレンダー１の色&カレンダー２の色" 
-                style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
--->
+
+
+

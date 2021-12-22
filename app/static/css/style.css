@@ -4,10 +4,11 @@
 
 body {
     padding-left: 15px;
-    background-color: #C1012D;
+    background-color: rgb(255, 253, 246);
 }
 
 h1 {
-    color: #C25110;
+    color: rgb(209, 113, 209);
     font-family: 'Lobster';
 }
+
